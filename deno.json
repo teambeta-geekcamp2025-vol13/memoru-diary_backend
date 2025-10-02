@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "@google-cloud/vision": "npm:@google-cloud/vision@^5.3.3",
+    "@google/genai": "npm:@google/genai@^1.21.0",
+    "drizzle-kit": "npm:drizzle-kit@^0.31.5",
+    "drizzle-orm": "npm:drizzle-orm@^0.44.5",
+    "hono": "jsr:@hono/hono@^4.9.9"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-env src/main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
