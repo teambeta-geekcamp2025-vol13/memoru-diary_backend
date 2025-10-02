@@ -16,7 +16,7 @@ export default async function main() {
     model: "gemini-2.5-flash",
     contents: createUserContent([
       createPartFromUri(myfile.uri, myfile.mimeType),
-      "Caption this image.",
+      "画像の場所と状況を抽出",
     ]),
   });
   console.log(response.text);
