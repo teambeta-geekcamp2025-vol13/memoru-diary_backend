@@ -1,4 +1,4 @@
-import {pgTable, serial, timestamp, unique, uuid, pgEnum} from "drizzle-orm/pg-core";
+import {pgTable,  timestamp, unique, uuid, pgEnum} from "drizzle-orm/pg-core";
 import { users } from "./users.ts";
 export const follow_requestsEnum = pgEnum('status', ['permission', 'rejection', 'requesting']);
 export const follow_requests = pgTable('follow_requests', {

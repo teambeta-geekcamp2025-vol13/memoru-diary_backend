@@ -1,5 +1,4 @@
-import { integer, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
-import { time } from "node:console";
+import {  pgTable, text, timestamp, uuid,} from "drizzle-orm/pg-core";
 export const users = pgTable('users', {
   id: uuid().primaryKey().defaultRandom().notNull(),
   account_id: text().unique().notNull(),

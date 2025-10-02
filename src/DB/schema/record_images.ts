@@ -1,4 +1,4 @@
-import {text, integer, pgTable, primaryKey, uuid, varchar, timestamp } from "drizzle-orm/pg-core";
+import {text, pgTable, uuid, timestamp } from "drizzle-orm/pg-core";
 import { life_records } from "./life_records.ts";
 export const record_images = pgTable('record_images', {
   id: uuid().primaryKey().defaultRandom().notNull(),

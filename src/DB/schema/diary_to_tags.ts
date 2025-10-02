@@ -1,4 +1,4 @@
-import {pgTable, serial, uuid, varchar} from "drizzle-orm/pg-core";
+import {pgTable, uuid, } from "drizzle-orm/pg-core";
 import { diaries } from "./diaries.ts";
 import { tags } from "./tags.ts";
 export const diary_to_tags = pgTable('diary_to_tags', {

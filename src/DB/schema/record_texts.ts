@@ -1,4 +1,4 @@
-import {text, pgTable, serial, uuid, varchar, timestamp} from "drizzle-orm/pg-core";
+import {text, pgTable,  uuid,  timestamp} from "drizzle-orm/pg-core";
 import { life_records } from "./life_records.ts";
 
 export const record_texts = pgTable('record_texts', {

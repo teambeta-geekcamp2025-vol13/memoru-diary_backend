@@ -1,4 +1,4 @@
-import {boolean, pgTable, serial, text, timestamp, uuid, varchar} from "drizzle-orm/pg-core";
+import {boolean, pgTable,  text, timestamp, uuid,} from "drizzle-orm/pg-core";
 import { users } from "./users.ts";
 export const diaries = pgTable('diaries', {
     id: uuid().primaryKey().defaultRandom().notNull(),

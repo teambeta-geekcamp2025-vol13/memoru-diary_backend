@@ -1,4 +1,4 @@
-import {pgTable, serial, unique, uuid, varchar} from "drizzle-orm/pg-core";
+import {pgTable,  unique, uuid} from "drizzle-orm/pg-core";
 import { users } from "./users.ts";
 export const follows = pgTable('follows', {
     id: uuid().primaryKey().defaultRandom().notNull(),
